@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Sans&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/loader.css">
+</head>
+
+<body>
+    <div class="overlay" onclick="closeModal()"></div>
+    <div class="logincont">
+        <div class="login_text">
+            <img src="../assets/logo.png" alt="">
+            <h1 id="sign_text">Login</h1>
+            <p id="sign_para">Get access to your Orders, Wishlist and Recommendations</p>
+        </div>
+        <form action="">
+            <span id="cross_btn">&times;</span>
+            <p>Enter Email/Mobile Number</p>
+            <input type="number" min="10" max="10" required>
+            <button id="submit_btn" type="button">Request OTP</button>
+            <button id="existing_user" type="button"></button>
+            <p1 id="sign_up">New to Easy Shop? Create an account</p1>
+        </form>
+    </div>
+    <header>
+        <nav class="navbar">
+            <span><i class="uil uil-bars"></i></span>
+            <ul>
+                <li> <a href="index.html"><img src="../assets/logo.png" alt=""></a> </li>
+                 <input type="text" type="search" placeholder="Search for product,brands and more"><i class="uil uil-search"></i>
+                <li><button id="log_btn">Login</button></li>
+                <li><a href="">Become a Seller</a> </li>
+                <li><a href="">Fashion</a> </li>
+                <li><a href="cart.html" class="cart_itm"><i class="uil uil-shopping-cart-alt"></i><span class="cart_length">0</span><span id="cart_name">Cart</span>
+                </a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="boxItem"><img src="../assets/mobiles.webp" alt=""> <span> Mobiles</span></div>
+            <div class="boxItem"><img src="../assets/item1.webp" alt=""> <span> Grocery</span></div>
+            <div class="boxItem"><img src="../assets/fashion.webp" alt=""> <span> Fashion</span></div>
+            <div class="boxItem"><img src="../assets/electronics.webp" alt=""> <span>Electronics</span> </div>
+            <div class="boxItem"><img src="../assets/home.webp" alt=""> <span> Home</span></div>
+            <div class="boxItem"><img src="../assets/alliances.webp" alt=""><span> Appliances</span></div>
+            <div class="boxItem"><img src="../assets/travel.webp" alt=""> <span> Travel</span></div>
+            <div class="boxItem"><img src="../assets/topoffers.webp" alt=""> <span>Top Offers</span></div>
+            <div class="boxItem"><img src="../assets/toys.webp" alt=""><span> Toys</span></div>
+        </div>
+    </header>
+    <div class="img-slider">
+        <img src="../assets/flipslide.webp" alt="">
+    </div>
+    <div class="item_containers">
+    </div>
+    <!-- <div class="lds-ring"><div></div><div></div><div></div><div></div></div> -->
+    <script src="../js/script.js"></script>
+    <script src="../js/api.js"></script>
+</body>
+
+</html>

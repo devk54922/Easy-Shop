@@ -1,0 +1,117 @@
+
+.login_text{
+    /* border: 3px solid rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   row-gap:1rem ;
+    width: 18rem;
+    height: 30rem;
+    background-color:var( --background-color);
+    font-family: 'Poppins','sans-serif';
+    color: var(--font-color);
+
+}
+.login_text img{
+    width: 40%;
+    height: 8%;
+}
+.login_text h2, p{
+    margin: 2.5rem;
+    flex-wrap: wrap;   
+}
+.overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0%;
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+}
+.show-overlay{
+    opacity: 1;
+    z-index: 1;
+}
+.logincont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -50%;
+    left:50%;
+    background-color: white;
+    transform: translate(-50%,-50%);
+    transition: 1s;
+    z-index: 9;
+}
+.show-loginform{
+    top: 50%;
+    z-index: 9;
+  
+}
+.logincont #cross_btn {
+    color: var(--font-color);
+    /* width: 32px; */
+    line-height: 30px;
+    background-color: var( --background-color);
+    font-size: xx-large;
+    position: absolute;
+    cursor: pointer;
+    left: 40rem;
+}
+form{
+    width: 24rem;
+    height: 30rem;
+    border: 1px solid grey ;
+   
+       }
+       form p{
+       margin: 4rem 0 0 3rem;    
+       font-family: 'Poppins','sans-serif';            
+     
+       }
+       form input{
+        margin:.5rem 3rem;
+        border: none;
+        border-bottom: 1px solid grey;
+        outline: none;
+        width: 17rem;
+       }
+       input::-webkit-outer-spin-button,
+       input::-webkit-inner-spin-button {
+       -webkit-appearance: none;
+        margin: 0;
+}
+       form #submit_btn{
+        padding:1rem 6rem;
+        color: white;
+        background-color: #fb641b;
+        outline: none;
+        border: none;
+        margin: 5rem 3rem 0rem 3rem;
+        font-family: 'Poppins','sans-serif'; 
+        cursor: pointer;
+       }
+       form #sign_up{
+        color: #2874F0;
+        margin: 0rem 3rem;
+        font-family: 'Poppins','sans-serif';   
+        cursor: pointer;
+       position: absolute;
+       top: 27rem;
+       left: 18rem;
+        align-items: end;
+       }
+       .existing_user{
+        border: none;
+        outline: none;
+        cursor: pointer;
+        box-shadow: 0px 0px 2px 0px grey;
+        width: 16rem;
+        height: 2.5rem;
+         margin: 1rem 3rem;
+         font-family: var(--font-family);
+     }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .box {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .cards {
+        width: 10%;
+        height: 10vh;
+        border: 2px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+<body>
+    <button onclick="fetchData()">show data</button>
+    <div class="box">
+    </div>
+</body>
+<script>
+
+    function fetchData() {
+        fetch('http://localhost:8080/manas')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                // do something with the data
+                data.map((item) => {
+                    document.querySelector(".box").innerHTML +=
+                        `<div class="cards"> ${item.text} </div>`
+                })
+            })
+            .catch(error => {
+                console.error('There was a problem fetching the data:', error);
+            });
+    }
+
+
+    
+</script>
+
+</html>

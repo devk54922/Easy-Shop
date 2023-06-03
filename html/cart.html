@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Sans&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="logincont">
+
+        <div class="login_text">
+            <h2 id="sign_text">Login</h2>
+            <p id="sign_para">Get access to your Orders, Wishlist and Recommendations</p>
+        </div>
+        <form action="">
+            <span id="cross_btn">&times;</span>
+            <p>Enter Email/Mobile Number</p>
+            <input type="number">
+            <button id="submit_btn" type="submit">Request OTP</button>
+            <button id="existing_user" type="button"></button>
+            <p1 id="sign_up">New to Easy Shop? Create an account</p1>
+        </form>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <span><i class="uil uil-bars"></i></span>
+            <ul>
+                <li> <a href="index.html"><img src="../assets/logo.png" alt=""></a> </li>
+                <input type="text" type="search" placeholder="Search for product,brands and more"><i class="uil uil-search"></i>
+                <li><button id="log1_btn">Account</button></li>
+                <!-- <li> <a href="cart.html" class="cart_itm"> <i class="uil uil-shopping-cart-alt"></i>Cart <span class="cart_length"></span> </a> </li> -->
+            </ul>
+        </nav>
+    </header>
+    <div class="cart_container">
+        <div class="cart_categories">
+            <span>Easy Shop</span>
+            <span>Grocery</span>
+        </div>
+        <div class="cart_items" id="cart__items">
+            
+        </div>
+    </div>
+    <div class="priceMaincontainer">
+        <div class="cart-price-details"><h3>PRICE DETAILS</h3></div>
+        <div class="price-line"></div>
+        <div class="cart-items-details">
+            <div class="price-cart-items"><span>Price <span>(0 item)</span> </span><span>
+                &#8377 0</span></div>
+            <div class="price-cart-items"><span>Discount</span><span class="free">&#8377 -0</span></div>
+            <div class="price-cart-items"><span>Delivery Charge</span><span class="free">Free</span></div>
+            <div class="price-line"></div>
+            <div class="price-cart-items"><strong>Total Amount</strong><strong>&#8377 0</strong></div>
+        </div>
+        <div class="price-line"></div>
+        <div class="cart-save-items"><strong>You will save &#8377 0 on this order</strong></div>
+    </div>
+    <!-- <footer class="footer">
+        <span class= "terms_policies">
+            <span class="policies">Policies:</span>
+            <a href="">&nbsp Return Policy &nbsp|</a>
+            <a href="">&nbsp Terms of Use &nbsp |</a>
+            <a href="">&nbsp Security &nbsp |</a>
+            <a href="">&nbsp Privacy &nbsp |</a>
+            <a href="">&nbsp Infringement</a>
+            <span class="rights">© 2007-2023 EasyShop.com</span>
+        </span>
+        <span class="help">Need help? Visit the &nbsp <a href="">Help Center</a> &nbsp or &nbsp <a href="">Contact
+                Us</a></span>
+    </footer> -->
+
+    <!-- <script src="../js/script.js"></script> -->
+    <script src="../js/cart.js"></script>
+    <!-- <script src="../js/api.js"></script> -->
+</body>
+
+</html>

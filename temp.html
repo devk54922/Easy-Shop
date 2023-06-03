@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainCartItems{
+            border: 4px solid orange;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 50%;
+        }
+
+        .place_orderBtn{
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+        }
+        .del-btn{
+            background-color: red;
+            color: white;
+          padding: 10px;
+          border: none;
+            border-radius: 10px;
+        }
+     .cartItems{
+        border: 2px solid  red;
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+     }
+     .product_price{
+        border:  2px solid rebeccapurple;
+     }
+     .name-price{
+        display: flex;
+        border: 2px solid green;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+     }
+    </style>
+</head>
+<body>
+    <div class="mainCartItems">
+    <div class="cartItems">
+    <img src="./assets/alliances.webp" alt="product image">
+        <div class="name-price">
+        <span>Product Name</span>
+        <span>Discription</span>
+        <span class="product_price">$9999</span> </div>
+        </div>
+        <div>
+            <button class="place_orderBtn" type="button">Place Order
+            </button>
+            <button class="del-btn" onclick="removeItem(${i})" >Remove Item</button>
+        </div>
+    </div>
+    
+</body>
+</html>
